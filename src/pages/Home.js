@@ -1,4 +1,7 @@
 import { Helmet } from "react-helmet";
+import Footer from "../components/Footer";
+import Navbar from "../components/Navbar";
+import Search from "../components/Search";
 
 function Home() {
   return (
@@ -6,9 +9,9 @@ function Home() {
       <Helmet>
         <title>Weather App | Home</title>
       </Helmet>
-      <div>
-        <h1>Home</h1>
-      </div>
+      <Navbar title={"Home"} />
+      <Search />
+      <Footer />
     </>
   );
 }
