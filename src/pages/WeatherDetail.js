@@ -10,22 +10,21 @@ import styles from "../styles/WeatherDetail.module.css";
 function WeatherDetail({ match: { params } }) {
   const firstLetter = params.city[0].toUpperCase();
   const city = firstLetter + params.city.slice(1);
-  useEffect(() => {
-    fetchData();
-  }, [city]);
-
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
   const mainUrl =
     config.baseApiUrl + `q=${city}&appid=${config.apiKey}&units=metric`;
-  async function fetchData() {
-    setLoading(true);
-    const res = await axios.get(mainUrl);
-    const parsedData = await res.data;
-    await setData(parsedData);
-    setLoading(false);
-    console.log(data);
-  }
+  useEffect(() => {
+    const fetchData = async () => {
+      setLoading(true);
+      const res = await axios.get(mainUrl);
+      const parsedData = await res.data;
+      await setData(parsedData);
+      setLoading(false);
+    };
+    fetchData();
+  }, [mainUrl]);
+
   if (loading) {
     return <h1>Loading...</h1>;
   }
