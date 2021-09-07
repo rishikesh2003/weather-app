@@ -8,6 +8,8 @@
 
 A weather app made with reactjs and javascript.
 
+### API USED : https://openweathermap.org/api
+
 ## What users can do?
 
 - Can Search for the desired city they want to know the weather about
