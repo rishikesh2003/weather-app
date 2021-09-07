@@ -11,6 +11,18 @@ function Home() {
       </Helmet>
       <Navbar title={"Home"} />
       <Search />
+      <h1 className="main-header">Wind Map</h1>
+      <div
+        style={{
+          padding: "20px",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+      >
+        <iframe src="https://earth.nullschool.net/" title="MAP"></iframe>
+      </div>
+
       <Footer />
     </>
   );

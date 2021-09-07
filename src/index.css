@@ -15,3 +15,23 @@ body {
 .highlight-link {
   cursor: pointer;
 }
+
+iframe {
+  width: 80%;
+  height: 80vh;
+  border-radius: 15px;
+  border: none;
+  outline: none;
+}
+
+.main-header {
+  text-align: center;
+  padding-top: 20px;
+  font-weight: normal;
+}
+
+@media (max-width: 500px) {
+  iframe {
+    width: 100%;
+  }
+}

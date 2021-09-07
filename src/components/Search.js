@@ -10,6 +10,12 @@ function Search() {
   }
   return (
     <div className={styles.container}>
+      <h2
+        style={{ padding: "20px 0", color: "white" }}
+        className={"main-header"}
+      >
+        Search below to get the weather data.
+      </h2>
       <div className={styles.holder}>
         <input
           onChange={(e) => {

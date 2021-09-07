@@ -22,4 +22,3 @@ A responsive weather app made with reactjs and javascript.
 ## TODO
 
 - Add Search Suggestions
-- Add Demographics in the home page
