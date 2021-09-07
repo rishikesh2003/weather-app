@@ -2,14 +2,11 @@ footer {
   padding: 20px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
-  position: absolute;
   width: 100%;
   left: 0;
   bottom: 0;
-  background: rgb(236, 236, 236);
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 @media (max-width: 500px) {
@@ -17,4 +14,8 @@ footer {
     justify-content: center;
     line-height: 2;
   }
+}
+
+footer p {
+  margin: 0 10px;
 }

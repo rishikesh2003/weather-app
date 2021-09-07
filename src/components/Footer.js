@@ -18,7 +18,6 @@ function Footer() {
         </span>{" "}
         | Copyright &copy; {y}
       </p>
-      <p>Built with ❤️ by Rishikesh</p>
     </footer>
   );
 }
