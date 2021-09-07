@@ -1,12 +1,22 @@
+import { useHistory } from "react-router-dom";
 import "../styles/Footer.module.css";
 
 function Footer() {
   const d = new Date();
   const y = d.getFullYear();
+  const history = useHistory();
   return (
     <footer>
       <p>
-        <span className={"highlight"}>Weather App</span> | Copyright &copy; {y}
+        <span
+          onClick={() => {
+            history.push("/");
+          }}
+          className={"highlight highlight-link"}
+        >
+          Weather App
+        </span>{" "}
+        | Copyright &copy; {y}
       </p>
       <p>Built with ❤️ by Rishikesh</p>
     </footer>

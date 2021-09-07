@@ -11,3 +11,14 @@
 .navLogo {
   font-size: 24px;
 }
+
+@media (max-width: 500px) {
+  .navbar {
+    justify-content: space-around;
+    line-height: 2;
+  }
+}
+
+.icon {
+  margin: 0 20px;
+}

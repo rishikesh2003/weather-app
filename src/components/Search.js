@@ -1,10 +1,12 @@
 import styles from "../styles/Search.module.css";
 import { useState } from "react";
+import { useHistory } from "react-router-dom";
 
 function Search() {
   const [city, setCity] = useState("");
+  const history = useHistory();
   function handleSearch() {
-    console.log(city);
+    history.push(`/weather/${city}`);
   }
   return (
     <div className={styles.container}>

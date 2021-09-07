@@ -12,3 +12,6 @@ body {
 .highlight {
   color: red;
 }
+.highlight-link {
+  cursor: pointer;
+}
