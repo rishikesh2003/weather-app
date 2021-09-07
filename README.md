@@ -6,7 +6,7 @@
 
 ## Description
 
-A weather app made with reactjs and javascript.
+A responsive weather app made with reactjs and javascript.
 
 ### API USED : https://openweathermap.org/api
 
