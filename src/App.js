@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Error from "./pages/Error";
 import Home from "./pages/Home";
 import WeatherDetail from "./pages/WeatherDetail";
 
@@ -7,7 +8,8 @@ function App() {
     <Router>
       <Switch>
         <Route exact path={"/"} component={Home} />
-        <Route path={"/weather/:city"} component={WeatherDetail} />
+        <Route exact path={"/weather/:city"} component={WeatherDetail} />
+        <Route path="*" component={Error} />
       </Switch>
     </Router>
   );
