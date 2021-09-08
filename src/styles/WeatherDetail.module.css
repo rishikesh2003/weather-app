@@ -35,3 +35,10 @@
 .card img {
   margin: 10px 0;
 }
+
+.error {
+  padding: 20px;
+  text-align: center;
+  color: red;
+  font-size: 22px;
+}

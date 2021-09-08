@@ -7,6 +7,8 @@ footer {
   width: 100%;
   left: 0;
   bottom: 0;
+  color: black;
+  font-size: 18px;
 }
 
 @media (max-width: 500px) {
