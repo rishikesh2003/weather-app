@@ -113,7 +113,12 @@ function WeatherDetail({ match: { params } }) {
               alt="wind-icon"
             />
             <h2>Speed: {data.wind.speed} Km/H</h2>
-            <p>Deg: {data.wind.deg ? data.wind.deg : "Data Not Available"}°</p>
+            <p>
+              Deg:{" "}
+              {data.wind.deg
+                ? String(data.wind.deg) + "°"
+                : "Data Not Available"}
+            </p>
             <p>
               Gust: {data.wind.gust ? data.wind.gust : "Data Not Available"}
             </p>
